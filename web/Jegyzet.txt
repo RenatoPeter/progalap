@@ -1,0 +1,472 @@
+HTML jelentése HyperText Markup Language
+
+Ez egy számítógépes jelölőnyelv mely meghatározza a nyers szöveg
+szerkezetét és megjelenését.
+
+Ezek az elemek struktúrálják a weboldalait és meghatározzák annak tartalmát.
+
+================================================================================
+
+Attributes
+
+ha bővíteni akarjuk egy elem tagj-jét, akkor ezt megtehetjük egy attribute segítségével.
+Az attribútumok egy elem nyitó tag-jéhez hozzáadott tartalom és többféle módon használhatók 
+az információ nyújtástól a stílus megváltoztatásáig.
+
+Az attribútomok 2 részből állnak:
+ - Az attribútom neve
+ - Az attribútum értéke
+
+Az egyik általánosan használt attribútum az id, melyet gyakran a
+<div>-ekkel együtt használjuk. Akkor hasznos, amikor egy elemet többször használunk.
+
+================================================================================
+
+Fel 7
+
+1. Adjon hozzá egy "introduction" értékű id attribútumot a <div> címkéhez, amely a The Brown Bear <h1> címsor alatt található.
+
+2. Adjon hozzá egy "habitat" értékű id attribútumot a nyitó <div> címkéhez, amely gyermekként a Habitat <h2> fejlécet tartalmazza.
+
+3. Adjon hozzá egy "media" értékű id attribútumot a nyitó <div> címkéhez, amely gyermekként a Media <h2> fejlécet tartalmazza.
+
+
+<body>
+  <h1>The Brown Bear</h1>
+  <div id="introduction">
+    <h2>About Brown Bears</h2>
+    <h3>Species</h3>
+    <h3>Features</h3>
+  </div>
+  <div id="habitat">
+    <h2>Habitat</h2>
+    <h3>Countries with Large Brown Bear Populations</h3>
+    <h3>Countries with Small Brown Bear Populations</h3>
+  </div>
+  <div id="media">
+    <h2>Media</h2>
+  </div>
+</body>
+
+
+<body>
+  <p><span style="font-style: oblique; color: #9400D3">Se</span><span style="font-style: oblique; color: #4B0082">lf</span><span style="font-style: oblique; color: #0000FF">-dr</span><span style="font-style: oblique; color: #00FF00">iv</span><span style="font-style: oblique; color: #FFFF00">ing</span><span style="font-style: oblique; color: #FF7F00">ca</span><span style="font-style: oblique; color: #FF0000">rs</span> are anticipated to replace up to 2 million jobs over the next two decades.</p>
+</body>
+
+Display Text
+	
+	- A bekezdések <p> a nyers szöveg egy blokkját tartalmazzák.
+	- a <span> rövid szövegrészéleteket vagy más HTML-t tartalmaznak.
+	Olyan kis tartalomdarabok elválasztására szolgál, melyek ugyanabban a sorban
+	vannak mint a többi tartalom.
+
+=================================================================================================
+Feladat 8
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>love you</title>
+</head>
+<body>
+  <h1>The Brown Bear</h1>
+  <div id="introduction">
+    <h2>About Brown Bears</h2>
+    <p>
+      The brown bear (Ursus arctos) is native to parts of
+      northern Eurasia and North America.
+      Its conservation status is currently Least Concern. 
+      There are many subspecies within the brown bear species, 
+      including the Atlas bear and the Himalayan brown bear.
+    </p>
+    <h3>Species</h3>
+    <h3>Features</h3>
+    <p>
+      Brown bears are not always completely brown.
+      Some can be reddish or yellowish. 
+      They have very large, curved claws and huge paws.
+      Male brown bears are often 30% larger than female brown bears.
+      They can range from 5 feet to 9 feet from head to toe.
+    </p>
+  </div>
+  <div id="habitat">
+    <h2>Habitat</h2>
+    <h3>Countries with Large Brown Bear Populations</h3>
+    <h3>Countries with Small Brown Bear Populations</h3>
+    <p>
+      Some countries with smaller brown bear populations include Armenia,
+      Belarus, Bulgaria, China, Finland,
+      France, Greece, India, Japan, Nepal, 
+      Poland, Romania, Slovenia, Turkmenistan, and Uzbekistan.
+    </p>
+  </div>
+  <div id= "media">
+    <h2>Media</h2>
+  </div>
+</body>
+</html>
+
+
+Styling Text
+
+A szöveget HTML a tag-ek használatával stílusozhatjuk.
+Az <em> tag hangsúlyozza a szöveget, míg a <strong> tag
+kiemeli a fontos szövegrészt.
+A böngészők rendelkeznek beépített stílusokkal:
+	- <em> (dőlt - italic)
+	- <strong> (félkövér - bold)
+
+=============================================================================
+Feladat 9.
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>love you <3</title>
+</head>
+<body>
+  <h1>The Brown Bear</h1>
+  <div id="introduction">
+    <h2>About Brown Bears</h2>
+    <p>The brown bear (<em>Ursus arctos</em>) is native to parts of northern Eurasia and North America. Its conservation status is currently <strong>Least Concern</strong>. There are many subspecies within the brown bear species, including the Atlas bear and the Himalayan brown bear.</p>
+    <h3>Species</h3>
+    <h3>Features</h3>
+    <p>Brown bears are not always completely brown. Some can be reddish or yellowish. They have very large, curved claws and huge paws. Male brown bears are often 30% larger than female brown bears. They can range from 5 feet to 9 feet from head to toe.</p>
+  </div>
+  <div id="habitat">
+    <h2>Habitat</h2>
+    <h3>Countries with Large Brown Bear Populations</h3>
+    <h3>Countries with Small Brown Bear Populations</h3>
+    <p>Some countries with smaller brown bear populations include Armenia, Belarus, Bulgaria, China, Finland, France, Greece, India, Japan, Nepal, Poland, Romania, Slovenia, Turkmenistan, and Uzbekistan.</p>
+  </div>
+  <div id="media">
+    <h2>Media</h2>
+  </div>
+</body>
+</html>
+
+
+
+Line Breaks
+A HTML fájl kódban elhelyezett üres helyek nem befolyásolják
+az elemek elhelyezkedését a böngészőben.
+Ha módosítani akarjuk a helyeket, használhatjuk a HTML <br>
+(sortörő) elemét.
+A sortörés elem egyedülálló, mert csak egy kezdő tag-ből áll.
+A HTML kódon belül bárhol használhatjuk és a böngészőben egy sortörés fog megjelenni.
+
+================================================================================================
+
+Feladat 10.
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>love you <3</title>
+</head>
+<body>
+  <h1>The Brown Bear</h1>
+  <div id="introduction">
+    <h2>About Brown Bears</h2>
+    <p>The brown bear (<em>Ursus arctos</em>) is native to parts of northern Eurasia and North America. Its conservation status is currently <strong>Least Concern</strong>. <br><br>There are many subspecies within the brown bear species, including the Atlas bear and the Himalayan brown bear.</p>
+    <h3>Species</h3>
+    <h3>Features</h3>
+    <p>Brown bears are not always completely brown. Some can be reddish or yellowish. They have very large, curved claws and huge paws. Male brown bears are often 30% larger than female brown bears. They can range from 5 feet to 9 feet from head to toe.</p>
+  </div>
+  <div id="habitat">
+    <h2>Habitat</h2>
+    <h3>Countries with Large Brown Bear Populations</h3>
+    <h3>Countries with Small Brown Bear Populations</h3>
+    <p>Some countries with smaller brown bear populations include Armenia, Belarus, Bulgaria, China, Finland, France, Greece, India, Japan, Nepal, Poland, Romania, Slovenia, Turkmenistan, and Uzbekistan.</p>
+  </div>
+  <div id="media">
+    <h2>Media</h2>
+  </div>
+</body>
+</html>
+
+
+=======================================================================================================
+
+Unordered Lists
+A HTML-ben rendezetlen lista tag <ul> segítségével hozhatjuk létre az elemek listáját, nem meghatározott sorrend esetén.
+A rendezetlen lista felsorolja az egyes listaelemeket egy felsorolása ponttal.
+
+Az <ul> elem nem tartalmazhat nyers szöveget és nem formázza meg automatikusan a nyers szöveget rendezetlen elemek listájává.
+Az egyes listaelemeket hozzá kell adni a rendezetlen listájázhoz a <li> tag segítségével.
+A <li> vagy a lista elem tag-je egy lista elemének leírására szolgál.
+
+Feladat 11.
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>love you <3</title>
+</head>
+<body>
+  <h1>The Brown Bear</h1>
+  <div id="introduction">
+    <h2>About Brown Bears</h2>
+    <p>The brown bear (<em>Ursus arctos</em>) is native to parts of northern Eurasia and North America. Its conservation status is currently <strong>Least Concern</strong>. <br><br> There are many subspecies within the brown bear species, including the Atlas bear and the Himalayan brown bear.</p>
+    <h3>Species</h3>
+    <ul>
+      <li>Arctos</li>
+      <li>Collarus</li>
+      <li>Horribilis</li>
+      <li>Nelsoni (extinct)</li>
+    </ul>
+    <h3>Features</h3>
+    <p>Brown bears are not always completely brown. Some can be reddish or yellowish. They have very large, curved claws and huge paws. Male brown bears are often 30% larger than female brown bears. They can range from 5 feet to 9 feet from head to toe.</p>
+  </div>
+  <div id="habitat">
+    <h2>Habitat</h2>
+    <h3>Countries with Large Brown Bear Populations</h3>
+    <h3>Countries with Small Brown Bear Populations</h3>
+    <p>Some countries with smaller brown bear populations include Armenia, Belarus, Bulgaria, China, Finland, France, Greece, India, Japan, Nepal, Poland, Romania, Slovenia, Turkmenistan, and Uzbekistan.</p>
+  </div>
+  <div id="media">
+    <h2>Media</h2>
+  </div>
+</body>
+</html>
+
+
+
+Feladat (számozatlan)
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>love you <3</title>
+</head>
+<body>
+    <ul>
+      <h3>Tél</h3>
+      <li style="list-style-type:square">December</li>
+      <li style="list-style-type:square">Január</li>
+      <li style="list-style-type:square">Február</li>
+      <br>
+      <h3>Tavasz</h3>
+      <li style="list-style-type:circle">Március</li>
+      <li style="list-style-type:circle">Április</li>
+      <li style="list-style-type:circle">Május</li>
+      <br>
+      <h3>Nyár</h3>
+      <li style="list-style-type:disc">Június</li>
+      <li style="list-style-type:disc">Július</li>
+      <li style="list-style-type:disc">Augusztus</li>
+      <br>
+      <h3>Ősz</h3>
+      <li style="list-style-type:none">Szeptember</li>
+      <li style="list-style-type:none">Október</li>
+      <li style="list-style-type:none">November</li>
+    </ul>
+</body>
+</html>
+
+=======================================================================================================
+
+Ordered List
+A rendezett listák <ol> olyanok mint a rendezettlen listák, azzal a különbséggel, hogy minden egyes listaelem számozott.
+Akkor hasznosak ha fel kell sorolnun egy folyamat külöböző lépéseit vagy rangsorolnunk kell az elemeket az elsőtől az utolsóig.
+A rendezett listát a <ol> tag-el hozzuk létre, majd a <li> segítségével az egyes listaelemeket adhatjuk a listához.
+
+Feladat 12.
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>love you <3</title>
+</head>
+<body>
+  <h1>The Brown Bear</h1>
+  <div id="introduction">
+    <h2>About Brown Bears</h2>
+    <p>The brown bear (<em>Ursus arctos</em>) is native to parts of northern Eurasia and North America. Its conservation status is currently <strong>Least Concern</strong>.<br /><br /> There are many subspecies within the brown bear species, including the Atlas bear and the Himalayan brown bear.</p>
+    <h3>Species</h3>
+    <ul>
+      <li>Arctos</li>
+      <li>Collarus</li>
+      <li>Horribilis</li>
+      <li>Nelsoni (extinct)</li>
+    </ul>
+    <h3>Features</h3>
+    <p>Brown bears are not always completely brown. Some can be reddish or yellowish. They have very large, curved claws and huge paws. Male brown bears are often 30% larger than female brown bears. They can range from 5 feet to 9 feet from head to toe.</p>
+  </div>
+  <div id="habitat">
+    <h2>Habitat</h2>
+    <h3>Countries with Large Brown Bear Populations</h3>
+    <ol>
+      <li>Russia</li>
+      <li>United States</li>
+      <li>Canada</li>
+    </ol>
+    <h3>Countries with Small Brown Bear Populations</h3>
+    <p>Some countries with smaller brown bear populations include Armenia, Belarus, Bulgaria, China, Finland, France, Greece, India, Japan, Nepal, Poland, Romania, Slovenia, Turkmenistan, and Uzbekistan.</p>
+  </div>
+  <div id="media">
+    <h2>Media</h2>
+  </div>
+</body>
+</html>
+
+
+=======================================================================================================
+
+Images
+A összes eddig megismert elem egy közös vonást mutat:
+Teljes egészében szövegből állnka.
+Az <img> tag segítségével képet adhatunk hozzá egy weboldalhoz. A legtöbb elemhez nyitó és záró tag is szükséges, de az <img> tag egy önmagát záró tag.
+Szintaxis:
+<img src="image-location.jpg">
+
+Feladat 13.
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>love you <3</title>
+</head>
+<body>
+  <h1>PAPASZITA 🥊</h1>
+  <img src="papszita.jpeg" height=400>
+</body>
+</html>
+
+
+Image Alts
+
+Az alt attribútumok, jelentése alternatív text (alternatív szöveg),
+mely jelentést ad a webhelyeinken lévő képeinket.
+Az alt attribútum ugyanúgy hozzáadható a tag-ekhez, mint az
+src attribútum. Az alt értéknek a kép leírásának kell lennie.
+
+=======================================================================================================
+
+Videos
+A képek mellett a HTML a videók megjelentését is támogatja.
+Az <img> tag-hez hasonló a <video> tag is src attribútomot
+igényel, mely a linket tartalmazza a videó forrásához.
+Az <img> tag-től eltérően azonban a <video> elemhez a nyitó és záró
+tag is szükséges.
+SZINTAXIS:
+<video sc="" width="320" height="240" controls> </video>
+
+=======================================================================================================
+
+Linking to other web pages
+
+A HTML és az Internet egyik hatékony képessége, hogy weboldalakra hivatkozunk.
+
+Linkeket adhatunk hozzá egy weboldalhoz egy horgonyelem hozzáadásával <a> és a link szövegének beillesztésével a nyitó és záró tag-ek közé.
+<a>Link to something webpage</a>
+
+A fenti példa a hiányos href attribútum nélkül.
+
+Ez az attribútum azt jelenti, hogy hyperlink reference és egy link útvonalát adhatjuk meg vele, vagy annak a címet, ahogy egy fájl található
+(akár a számítógépen, akár más helyen van.)
+
+
+=======================================================================================================
+
+project-folder/
+|-- about.html
+|-- contact.html
+|-- index.html
+
+
+A HTML fájlokat gyakran ugyanabban a mappában tárolják, mint a fenti példában látható.
+
+Ha a böngésző jelenleg az index.html fájlt jeleníti meg, akkor az is tudja, hogy az about.html és a contact.html ugyanabban a mappában található. Mivel a fájlok ugyanabban a mappában vannak tárolva
+a, weboldalakat egy relatív elérési út segítségével kapcsolhatjuk össze.
+
+<a href="./conatct.html">Contact</a>
+
+Ebben a példában az <a> tag-et egy relatív útvonallal használjuk az aktuális HTML fájl és az ugyanabban a mappában található contact.html fájl összekapcsolására.
+A relatív elérési út egy fájlnév, mely megmutatja a helyi fájl elérési útját (p.: ./index.html) szemben egy abszolút elérési úttal a teljes elérési utat jelenti 
+(pl: https://www.youtube.com/index.html)
+
+=======================================================================================================
+
+Linking to Same page
+Az eddigi összes tartalom egy oldalon elfér egy képernyőn.
+
+Ha azonban nem fér el, akkor lehetőségünk van az oldalon belüli navigációra. Ehhez pedig meg kell adnunk egy cél azonosítót (id).
+<p id="top">Oldal teteje</p>
+<h1 id="bottom">Oldal alja </h1>
+
+Ebben a példában a p elemhez a ,,top", a h1 elemhez pedig a ,,bottom" azonosítót rendeltünk.
+
+Az azonosítónak leíró jellegűnek kell lennie, hogy könnyen megjegyezhető legyen a link célja.
+
+A link egy string, amely a # karaktert és a célelem azonosítóját tartalmazza.
+
+<ol>
+
+<li><a href="top">Teteje</a></li>
+<li><a href="bottom">Alja</a></li>
+
+</ol>
+=======================================================================================================
+
+Az interneten számos webhely található, mely olyan információkat jelenít meg, mint pl: sporteredmények, számlaadatok, stb.
+Ezek az adatok táblázatos jellegűek, a HTML a <table> elemet használja arra, hogy 2 dimenziós táblában mutassuk be az információt.
+Mielőtt az adatokat megjelenítenének a <table> elem segítségével kell létrehoznunk az adatokat tartalmazó táblázatot.
+
+=======================================================================================================
+
+
+Csakúgy, mint a table data-t, egy table heading-et is a táblázat egy sorában <tr> kell elhelyezni.
+
+Feladat:
+
+HTML:
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <table>
+    <tr>
+      <th></th>
+      <th scope="col">Saturday</th>
+      <th scope="col">Sunday</th>
+    </tr>
+    <tr>
+      <th scope="row">Temperature</th>
+      <td>73</td>
+      <td>81</td>
+    </tr>
+  </table>
+</body>
+</html>
+
+CSS:
+
+table, td {
+  border: 1px solid #7C12F4;
+}
+
+Először egy új sor létrehozva, hogy tartalmazza a 3 címsort: üres címsor, Saturday, Sunday.
+Az üres heading létrehozza a táblázat extra celláját, mely ahhoz szükséges, hogy a táblázat fejlécei megfelelően illeszkedjenek azokhoz az adatokhoz amihez tartoznak.
+A második sorban egy table heading lett megadva a sor címének:
+Temperature
+A scope attribútum 2 értéket vehet fel:
+1. row (sor) ez az érték egyértelművé teszi, hogy a címsor egy sorra vonatkozik.
+2. col (oszlop) ez az érték egyértelművé teszi, hogy a címsor egy oszlopra vonatkozik.
